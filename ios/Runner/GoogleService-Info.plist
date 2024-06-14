@@ -9,7 +9,7 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.example.expensesApp</string>
+	<string>com.example.expensesAp3p</string>
 	<key>PROJECT_ID</key>
 	<string>expense-app-15398</string>
 	<key>STORAGE_BUCKET</key>
@@ -25,6 +25,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:756222103947:ios:90abfdaa439b12cbfb5f8e</string>
+	<string>1:756222103947:ios:557e21adb2d784e1fb5f8e</string>
 </dict>
 </plist>

@@ -24,7 +24,7 @@ if (flutterVersionName == null) {
 }
 
 android {
-    namespace = "com.example.expenses_app"
+    namespace = "com.example.expensesAp3p"
     compileSdk = flutter.compileSdkVersion
     ndkVersion = flutter.ndkVersion
 
