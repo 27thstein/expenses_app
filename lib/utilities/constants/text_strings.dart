@@ -2,7 +2,7 @@ class ExStrings {
   ExStrings._();
 
   /// App Name
-  static const String appName = "OALET";
+  static const String appName = "LINEAR";
   static const String appSlogan = "Expenses the right!";
 
   /// Onboarding Titles and Subtitles
@@ -14,8 +14,9 @@ class ExStrings {
 
   /// Login and Sign Up
   static const String welcomeTo = "Welcome to";
+  static const String welcomeBack = "Welcome Back";
   static const String loginPageSubtext =
-      "Login now to track all your expenses and income at a place!";
+      "Login now to track all your expenses \nand income at a place!";
   static const String letsGetStarted = "Let’s Get Started...";
   static const String getStarted = "Get Started";
   static const String email = "Email";
@@ -43,7 +44,7 @@ class ExStrings {
   static const String register = "Register";
   static const String confirm = "Confirm";
   static const String registerPageSubtext =
-      "Create an account to access all the features of Linear!";
+      "Create an account to access all the \nfeatures of Linear!";
   static const String yourName = "Your Name";
   static const String yourNamePlaceholder = "Ex. Vicky Aman";
   static const String yourPassword = "Your Password";

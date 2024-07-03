@@ -7,6 +7,7 @@ class ExImages {
 
   static const String ellipse = "assets/images/Ellipse.png";
   static const String petalImage = "assets/images/petalImage.png";
+  static const String lightPetal = "assets/images/light-petal.svg";
   static const String simChip = "assets/images/sim-chip.png";
   static const String starLarge = "assets/images/star-large.png";
   static const String starSmall = "assets/images/star-small.svg";
@@ -18,6 +19,15 @@ class ExImages {
   static const String keyLockIcon = "assets/icons/keylock-icon.png";
   static const String userIcon = "assets/icons/user-icon.png";
   static const String backIcon = "assets/icons/back-Icon.png";
+  static const String bellIcon = "assets/icons/bell.svg";
+  static const String telegramIcon = "assets/icons/telegram-icon.png";
+  static const String requestIcon = "assets/icons/request-icon.png";
+  static const String walletIcon = "assets/icons/wallet.png";
+  static const String horizontalDotsIcon = "assets/icons/dots-horizontal-rounded.png";
+  static const String homeIcon = "assets/icons/home_icon.svg";
+  static const String walletIcon2 = "assets/icons/wallet.svg";
+  static const String userIcon2 = "assets/icons/user_icon.svg";
+  static const String chartIcon = "assets/icons/chart-pie.svg";
 
   /// Avatar Images
   static const String user1 = "assets/images/user-1.png";

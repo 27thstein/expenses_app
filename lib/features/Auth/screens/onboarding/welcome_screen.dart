@@ -1,8 +1,8 @@
+import 'package:expenses_app/common/widgets/logo_text_button.dart';
 import 'package:expenses_app/features/Auth/screens/login/login_screen.dart';
 import 'package:expenses_app/features/Auth/screens/signup/signup_screen.dart';
 import 'package:expenses_app/utilities/constants/colors.dart';
 import 'package:expenses_app/utilities/constants/image_strings.dart';
-import 'package:expenses_app/utilities/device/device_utility.dart';
 import 'package:expenses_app/utilities/theme/custom_themes/text_theme.dart';
 import 'package:flutter/material.dart';
 
@@ -57,53 +57,38 @@ class WelcomeScreen extends StatelessWidget {
               ),
             ),
           ),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 24.0),
-            child: SizedBox(
-              width: ExDeviceUtils.getScreenWidth(context),
-              child: OutlinedButton(
-                onPressed: () {},
-                child: Row(
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Image.asset(ExImages.google),
-                    const SizedBox(
-                      width: 8,
-                    ),
-                    const Text(ExStrings.continueWithGoogle),
-                  ],
-                ),
-              ),
-            ),
+
+          /// CONTINUE WITH GOOGLE BUTTON
+
+          LogoTextButton(
+            logo: ExImages.google,
+            text: ExStrings.continueWithGoogle,
+            onPressed: () {},
           ),
-          Padding(
-            padding: const EdgeInsets.only(
-                left: 24.0, bottom: 44, top: 18, right: 24),
-            child: SizedBox(
-              width: ExDeviceUtils.getScreenWidth(context),
-              child: OutlinedButton(
-                onPressed: () {
-                  Navigator.pushAndRemoveUntil(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) => const SignupScreen()),
-                      (route) => false);
-                },
-                child: Row(
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Image.asset(ExImages.atLogo),
-                    const SizedBox(
-                      width: 8,
-                    ),
-                    const Text(ExStrings.continueWithEmail),
-                  ],
-                ),
-              ),
-            ),
+
+          const SizedBox(
+            height: 11,
           ),
+
+          /// CONTINUE WITH EMAIL BUTTON
+
+          LogoTextButton(
+            logo: ExImages.atLogo,
+            text: ExStrings.continueWithEmail,
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const SignupScreen(),
+                ),
+              );
+            },
+          ),
+
+          const SizedBox(
+            height: 44,
+          ),
+
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
@@ -127,11 +112,12 @@ class WelcomeScreen extends StatelessWidget {
                     fontSize: 16,
                     color: const Color(0xFF1A38F8),
                     decoration: TextDecoration.underline,
+                    decorationColor: const Color(0xFF1A38F8),
                   ),
                 ),
               )
             ],
-          )
+          ),
         ],
       ),
     );
