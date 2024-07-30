@@ -1,5 +1,5 @@
 name: expenses_app
-description: "A new Flutter project."
+description: "Expenses The Better Way."
 publish_to: 'none'
 version: 0.1.0
 
@@ -12,9 +12,13 @@ dependencies:
   flutter:
     sdk: flutter
   flutter_bloc: ^8.1.6
+  flutter_secure_storage: ^9.2.2
   flutter_svg: ^2.0.10+1
   go_router: ^14.2.0
+  http: ^1.2.1
+  iconsax: ^0.0.8
   pinput: ^5.0.0
+  shared_preferences: ^2.2.3
   url_launcher: ^6.3.0
 
 dev_dependencies:

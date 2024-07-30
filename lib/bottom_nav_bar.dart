@@ -60,12 +60,14 @@ class BottomNavBar extends StatelessWidget {
                     _buildNavItem(
                       context,
                       icon: SvgPicture.asset(
-                        height: 25,
+                        height: 30,
                         ExImages.homeIcon,
-                        color: state is BottomNavItemSelected &&
+                        colorFilter: state is BottomNavItemSelected &&
                                 state.selectedIndex == 0
-                            ? ExColors.secondary
-                            : Colors.grey,
+                            ? const ColorFilter.mode(
+                                ExColors.black, BlendMode.srcIn)
+                            : const ColorFilter.mode(
+                                Colors.grey, BlendMode.srcIn),
                       ),
                       index: 0,
                       isSelected: state is BottomNavItemSelected &&
@@ -74,12 +76,14 @@ class BottomNavBar extends StatelessWidget {
                     _buildNavItem(
                       context,
                       icon: SvgPicture.asset(
-                        height: 25,
+                        height: 30,
                         ExImages.walletIcon2,
-                        color: state is BottomNavItemSelected &&
+                        colorFilter: state is BottomNavItemSelected &&
                                 state.selectedIndex == 1
-                            ? ExColors.secondary
-                            : Colors.grey,
+                            ? const ColorFilter.mode(
+                                ExColors.black, BlendMode.srcIn)
+                            : const ColorFilter.mode(
+                                Colors.grey, BlendMode.srcIn),
                       ),
                       index: 1,
                       isSelected: state is BottomNavItemSelected &&
@@ -88,12 +92,14 @@ class BottomNavBar extends StatelessWidget {
                     _buildNavItem(
                       context,
                       icon: SvgPicture.asset(
-                        height: 25,
+                        height: 30,
                         ExImages.chartIcon,
-                        color: state is BottomNavItemSelected &&
+                        colorFilter: state is BottomNavItemSelected &&
                                 state.selectedIndex == 2
-                            ? ExColors.secondary
-                            : Colors.grey,
+                            ? const ColorFilter.mode(
+                                ExColors.black, BlendMode.srcIn)
+                            : const ColorFilter.mode(
+                                Colors.grey, BlendMode.srcIn),
                       ),
                       index: 2,
                       isSelected: state is BottomNavItemSelected &&
@@ -102,12 +108,14 @@ class BottomNavBar extends StatelessWidget {
                     _buildNavItem(
                       context,
                       icon: SvgPicture.asset(
-                        height: 25,
+                        height: 30,
                         ExImages.homeIcon,
-                        color: state is BottomNavItemSelected &&
+                        colorFilter: state is BottomNavItemSelected &&
                                 state.selectedIndex == 3
-                            ? ExColors.secondary
-                            : Colors.grey,
+                            ? const ColorFilter.mode(
+                                ExColors.black, BlendMode.srcIn)
+                            : const ColorFilter.mode(
+                                Colors.grey, BlendMode.srcIn),
                       ),
                       index: 3,
                       isSelected: state is BottomNavItemSelected &&
@@ -116,12 +124,14 @@ class BottomNavBar extends StatelessWidget {
                     _buildNavItem(
                       context,
                       icon: SvgPicture.asset(
-                        height: 25,
+                        height: 30,
                         ExImages.userIcon2,
-                        color: state is BottomNavItemSelected &&
+                        colorFilter: state is BottomNavItemSelected &&
                                 state.selectedIndex == 4
-                            ? ExColors.secondary
-                            : Colors.grey,
+                            ? const ColorFilter.mode(
+                                ExColors.black, BlendMode.srcIn)
+                            : const ColorFilter.mode(
+                                Colors.grey, BlendMode.srcIn),
                       ),
                       index: 4,
                       isSelected: state is BottomNavItemSelected &&
