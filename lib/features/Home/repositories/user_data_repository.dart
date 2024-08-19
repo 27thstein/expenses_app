@@ -2,13 +2,12 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 
-class UserRepository {
+class UserDataRepository {
   final String apiUrl = 'http://127.0.0.1:8000';
-  final FlutterSecureStorage storage;
+  final storage = const FlutterSecureStorage() ;
 
-  UserRepository({required this.storage});
 
-  Future<Map<String, dynamic>> fetchUserData() async {
+  Future<Map<String, dynamic>> fetchUserData(String userId) async {
     final token = await storage.read(key: 'auth_token');
     final userId = await storage.read(
         key: 'user_id'); // Assuming you use this to make specific requests

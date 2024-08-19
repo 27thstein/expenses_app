@@ -1,5 +1,6 @@
 // import 'package:firebase_core/firebase_core.dart';
 import 'package:expenses_app/features/Auth/repositories/auth_repository.dart';
+import 'package:expenses_app/features/Home/repositories/user_data_repository.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 
@@ -9,10 +10,12 @@ void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   // await Firebase.initializeApp();
   final authRepository = AuthRepository(baseUrl: 'http://127.0.0.1:8000');
+  final userDataRepository = UserDataRepository();
   const secureStorage = FlutterSecureStorage();
   final token = await secureStorage.read(key: 'auth_token');
 
   runApp(MyApp(
+    userDataRepository: userDataRepository,
       authRepository: authRepository,
       secureStorage: secureStorage,
       isLoggedIn: token != null));
